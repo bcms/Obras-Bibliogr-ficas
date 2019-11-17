@@ -1,6 +1,6 @@
 # Obras Bibliográficas
 
-Obras Bibliográficas é um projeto demonstrativo para conhecimento em lógica, angular e testes
+Obras Bibliográficas é um projeto demonstrativo para conhecimento em lógica, angular e testes.
 
 ## Introdução
 
