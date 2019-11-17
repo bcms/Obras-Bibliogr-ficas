@@ -69,10 +69,7 @@ describe('HomeComponent', () => {
 
     // Campo é obrigatório
     errors = names.errors || {};
-    expect(errors['required']).toBeTruthy();
-  //  const compiled = fixture.debugElement.nativeElement;
-  //    expect(compiled.querySelector('.content span').textContent).toContain('obras-bibliograficas app is running!');
-
+    expect(errors['required']).toBeTruthy();   
 
     // Atribuir valor correto para o campo
     names.setValue("Paulo Cesar Campos");

@@ -16,12 +16,12 @@ export class HomeComponent implements OnInit {
     private formBuilder: FormBuilder
   ) {
     this.authorForm = this.formBuilder.group({
-      'amountOfNames': this.formBuilder.control(null, [
+      'names': this.formBuilder.control('', [
+        Validators.required
+      ]),
+      'amountOfNames': this.formBuilder.control('', [
         Validators.required,
         Validators.pattern("^(-?[1-9]+\d*)$|^0$")
-      ]),
-      'names': this.formBuilder.control(null, [
-        Validators.required
       ])
     });
   }

@@ -4,21 +4,18 @@
         <form [formGroup]="authorForm" (ngSubmit)="formatNames()">
 
             <div class="form-group">
-                <label for="names">Quantidade de autores</label>
-                <input id="amountOfNames" class="form-control" [ngClass]="{'is-invalid': authorForm.controls.amountOfNames.invalid && (authorForm.controls.amountOfNames.dirty || authorForm.controls.amountOfNames.touched) }" formControlName="amountOfNames" type="text" />
-                <div class="invalid-feedback">
-                    Campo requerido.
-                </div>
-                <div class="invalid-feedback">
-                    Valor dever ser um número inteiro.
+                <label for="amountOfNames">Quantidade de autores</label>
+                <input id="amountOfNames" class="form-control" [ngClass]="{'is-invalid':authorForm.controls.amountOfNames.invalid }" formControlName="amountOfNames" type="text" />
+                <div class="invalid-feedback" *ngIf="authorForm.controls.amountOfNames.invalid">
+                    Valor inválido (Número inteiro)
                 </div>
             </div>
             <div class="form-group">
                 <label for="names">Nome dos autores</label>
-                <textarea id="names" class="form-control is-invalid" formControlName="names" rows="10"
+                <textarea id="names" class="form-control" [ngClass]="{ 'is-invalid': authorForm.controls.names.invalid }" formControlName="names" rows="10"
                     placeholder="Por favor, insira um autor por linha">
                 </textarea>
-                <div class="invalid-feedback">
+                <div class="invalid-feedback" *ngIf="authorForm.controls.names.invalid">
                     Campo requerido.
                 </div>
             </div>
