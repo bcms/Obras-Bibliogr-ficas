@@ -1,6 +1,12 @@
 # Obras Bibliográficas
 
-(LEIA ATÉ O FINAL)
+Obras Bibliográficas é um projeto demonstrativo para conhecimento em lógica, angular e testes
+
+## Introdução
+
+Foi criada uma aplicaçao angular que possibita catalogar nomes de autores.
+
+## Solicitação
 
 Quando se lista o nome de autores de livros, artigos e outras publicações é comum que se apresente o nome do autor ou dos autores da seguinte forma: sobrenome do autor em letras maiúsculas, seguido de uma vírgula e da primeira parte do nome apenas com as iniciais maiúsculas.
 
@@ -18,9 +24,12 @@ As seguintes regras devem ser seguidas nesta formatação:
 * as partes do nome que não fazem parte do sobrenome devem ser impressas com a inicial maiúscula e com as demais letras minúsculas;
 * "da", "de", "do", "das", "dos" não fazem parte do sobrenome e não iniciam por letra maiúscula.
 
-## Tecnologias a serem utilizadas
+## Tecnologias utilizadas
 
-## Procedimento para entrega
-Realize um fork deste repositório, desenvolva sua solução e encaminhe o seu repositório com o seu código. Arquivos compactados não serão aceitos.
+* Angular
+* Jasmine
+* Karma
 
-Altere o arquivo README para descrever quais componentes foram utilizados e como sua aplicação deverá ser executada.
+## Como executar aplicação
+
+Faça um clone do repositório, instale as dependências (npm install) e execute o comando "ng serve".
